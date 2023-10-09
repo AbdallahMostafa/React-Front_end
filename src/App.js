@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>      
-      <BrowserRouter>
+      <BrowserRouter basename ="/React-Front_end">
           <Routes>
             <Route exact path="/" element={<ProductList/>} />
             <Route exact path="/add-product" element={<AddProductForm  />} />
