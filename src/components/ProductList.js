@@ -64,21 +64,19 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
         // Render the attributes
         return <Card.Text>{renderedAttributes}</Card.Text>;
     };
-    return (
-        <div> 
-            <header className="header-contaier">
-                <h2> Product List </h2>
-                <div className="container-div">
-                        <div>
-                            <Link to="/add-product">
-                                <Button variant="primary">Add Product</Button>
-                            </Link>
-                            <Button variant="danger" onClick={handleDelete}>
-                                Mass Delete
-                            </Button>
+        return (
+            <div> 
+                <nav>
+                <header className="header-contaier">
+                    <h2> Product List </h2>
+                    <div className="container-div">
+                        <Link to="/add-product">
+                            <button>ADD</button>
+                        </Link>
+                        <button className=".delete-checkbox" id=".delete-checkbox" onClick={handleDelete}>MASS DELETE</button>
                     </div>
-                </div>
-            </header>
+                </header>
+                </nav>
             {Array.isArray(products) && products.length > 0 ? (
                  <CardGroup>
                 {products.map((product) => (

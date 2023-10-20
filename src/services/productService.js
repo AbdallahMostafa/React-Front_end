@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000/api/products';
+const BASE_URL = 'https://back-end.fly.dev/api/products';
 
 const productService = {
     getProducts: async () => {

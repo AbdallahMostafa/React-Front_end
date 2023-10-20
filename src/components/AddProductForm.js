@@ -93,25 +93,25 @@
             <div>
                 <header className='form-header'>
                     <div>
-                        <h2 id="product-header">Product Add</h2>
+                        <h2 id="product-header">Product Add </h2>
                     </div>
                     <Button onClick={handleSubmit} variant="success" >Save</Button>
                 </header>
                 <hr></hr>
                 <div id="alert-container"></div>
-                <form className="form-container">
+                <form className="form-container" id='#product_form'>
                     
-                    <label htmlFor="name" className="label-style">Name:</label>
-                    <input className="input-style" type="text" id="name"  value={name} name="name" onChange={handleFieldChange}/>
+                    <label htmlFor="name" className="label-style">Name: </label>
+                    <input className="input-style" type="text" id="#name"  value={name} name="name" onChange={handleFieldChange}/>
 
                     <label htmlFor="price" className='label-style'>Price:</label>
-                    <input className='input-style'type="number" id="price" name="price" value={price} onChange={handleFieldChange}/>
+                    <input className='input-style'type="number" id="#price" name="price" value={price} onChange={handleFieldChange}/>
 
                     <label htmlFor="SKU" className='label-style'>SKU:</label>
-                    <input className='input-style' type="text" id="SKU" value={SKU} name="SKU" onChange={handleFieldChange}/>
+                    <input className='input-style' type="text" id="#sku" value={SKU} name="SKU" onChange={handleFieldChange}/>
 
                     <label htmlFor="type" className='label-style'>Type:</label>
-                    <select className="select-style" id="type" value={type} name='type' onChange={handleFieldChange}>
+                    <select className="select-style" id="#productType" value={type} name='type' onChange={handleFieldChange}>
                         <option value="">Select a type</option>
                         <option value="DVD">DVD</option>
                         <option value="Book">Book</option>
