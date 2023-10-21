@@ -6,7 +6,7 @@ const BookProductForm = ({ handleAttributeChange }) => {
     <div>
       <label htmlFor="weight">Weight:</label>
       <ProductFormWithTooltips title="Enter weight in KG">
-        <input  className="input-style" type="number" id="#weight" name="weight" placeholder="Enter Weight"  onChange={(e) => handleAttributeChange('weight', e.target.value)} />
+        <input  className="input-style" type="number" id="weight" name="weight" placeholder="Enter Weight"  onChange={(e) => handleAttributeChange('weight', e.target.value)} />
       </ProductFormWithTooltips>
     </div>
   );

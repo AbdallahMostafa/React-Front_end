@@ -6,7 +6,7 @@ const DVDProductForm = ({ handleAttributeChange }) => {
     <div>
       <label htmlFor="size" className='lable-style'>Size:</label>
       <ProductFormWithTooltips title="Enter Size in MB">
-        <input className="input-style" type="number" id="#size" name="size" placeholder="Enter Size" onChange={(e) => handleAttributeChange('size', e.target.value)} />
+        <input className="input-style" type="number" id="size" name="size" placeholder="Enter Size" onChange={(e) => handleAttributeChange('size', e.target.value)} />
       </ProductFormWithTooltips>
     </div>
   );
