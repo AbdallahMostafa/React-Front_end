@@ -22,7 +22,7 @@ const FurnitureProductForm = ({ handleAttributeChange,  }) => {
       <div>
         <label htmlFor="length">Length:</label>
         <ProductFormWithTooltips title="Enter length in cm">
-          <input className="input-style" type="number" id="lenght" name="length" placeholder="Enter Length" onChange={(e) => handleAttributeChange('length', e.target.value)} />
+          <input className="input-style" type="number" id="length" name="length" placeholder="Enter Length" onChange={(e) => handleAttributeChange('length', e.target.value)} />
         </ProductFormWithTooltips>
 
       </div>
