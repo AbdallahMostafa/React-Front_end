@@ -90,7 +90,7 @@
         };
         
         return (
-            <div id='#product_form'> 
+            <div id='product_form'> 
                 <header className='form-header'>
                     <div>
                         <h2 id="product-header">Product Add </h2>
@@ -99,7 +99,7 @@
                 </header>
                 <hr></hr>
                 <div id="alert-container"></div>
-                <form className="form-container" id='#product_form'>
+                <form className="form-container" id='product_form'>
                     
                     <label htmlFor="name" className="label-style">Name: </label>
                     <input className="input-style" type="text" id="#name"  value={name} name="name" onChange={handleFieldChange}/>

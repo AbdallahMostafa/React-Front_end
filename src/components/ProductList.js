@@ -73,7 +73,7 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                         <Link to="/add-product">
                             <button>ADD</button>
                         </Link>
-                        <button className=".delete-checkbox" id=".delete-checkbox" onClick={handleDelete}>MASS DELETE</button>
+                        <button className="delete-checkbox" onClick={handleDelete}>MASS DELETE</button>
                     </div>
                 </header>
                 </nav>
