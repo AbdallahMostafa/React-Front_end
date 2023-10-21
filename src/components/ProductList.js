@@ -33,9 +33,9 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
         toggleProductSelection(productId); // Dispatching action to toggle product selection in the Redux store
     };
 
-    if (loading) {
-        return <p>Loading...</p>;
-    }
+    // if (loading) {
+    //     return <p>Loading...</p>;
+    // }
     
     const attributeUnitMap = {
         size: 'MB',
