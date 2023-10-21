@@ -73,7 +73,7 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                         <Link to="/add-product">
                             <button>ADD</button>
                         </Link>
-                        <button className="delete-checkbox" onClick={handleDelete}>MASS DELETE</button>
+                        <button onClick={handleDelete}>MASS DELETE</button>
                     </div>
                 </header>
                 </nav>
@@ -84,7 +84,7 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                         <div className="custom-control custom-checkbox checkbox-top-left">
                             <input
                             type="checkbox"
-                            className="custom-control-input"
+                            className="custom-control-input delete-checkbox"
                             id={`checkbox-${product.id}`}
                             checked={selectedProducts.includes(product.id)}
                             onChange={() => handleCheckboxChange(product.id)}
