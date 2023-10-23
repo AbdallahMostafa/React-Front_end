@@ -71,9 +71,9 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                     <h2> Product List </h2>
                     <div className="container-div">
                         <Link to="/add-product">
-                            <button>ADD</button>
+                            <<Button>ADD</<Button>
                         </Link>
-                        <button onClick={handleDelete}>MASS DELETE</button>
+                        <Button onClick={handleDelete}>MASS DELETE</<Button>
                     </div>
                 </header>
                 </nav>
