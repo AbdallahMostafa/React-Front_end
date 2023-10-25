@@ -23,12 +23,6 @@
 
 @media (max-width: 768px) {
  
-  .checkbox-top-left {
-    position: absolute; /* Adjust checkbox position */
-    top: 10px;
-    left: 10px;
-  }
-
   /* Increase font size and spacing for readability */
   .card-title,
   .card-text {
@@ -37,7 +31,6 @@
   }
 
   .btn {
-    width: 100%;
     font-size: 18px;
     margin: 10px;
   }
