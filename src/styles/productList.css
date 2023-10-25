@@ -26,6 +26,9 @@ nav {
 
 @media (max-width: 768px) {
   
+  nav {
+    margin: 0;
+  }
   .product-card {
     margin: 10px 0;
   }
