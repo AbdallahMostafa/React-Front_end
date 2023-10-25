@@ -1,13 +1,12 @@
 nav {
   margin: 0 10px;
 }
+
 .product-card {
-    margin: 0 10px;
+    margin: 10px 10px;
     border: 1px solid #000000 !important; /* Increase border width and set border color */
     border-radius: 25px;
     transition: box-shadow 0.3s ease;
-    padding: 3px; /* Add padding to create space between the button and card edge */
-
 }
   .card-body{
     align-items: center !important;  
