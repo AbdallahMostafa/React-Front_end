@@ -73,9 +73,13 @@
       font-size: 16px; /* Smaller font size for buttons */
       margin: 10px 0; /* Adjust margin for better spacing */
     }
-  
-    .input-message {
-      font-size: 14px; /* Smaller font size for error messages */
+    .error-message {
+        font-size: 14px; /* Smaller font size for error messages */
+        color: red;
+    }
+    .input-message{
+        font-size: 14px; /* Smaller font size for error messages */
+        color: red;
     }
   
     .form-header {
