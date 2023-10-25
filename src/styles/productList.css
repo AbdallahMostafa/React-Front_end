@@ -1,9 +1,9 @@
 
-.product-card:first-child {
+CardGroup .product-card:first-child {
   margin-right: 0px;
 }
 
-.product-card:last-child {
+CardGroup .product-card:last-child {
   margin-left: 0px;
 }
 .product-card {
