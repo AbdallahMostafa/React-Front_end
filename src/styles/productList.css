@@ -35,9 +35,4 @@
     margin: 10px;
   }
 
-  /* Adjust navigation menu for mobile */
-  .container-div {
-    display: flex;
-    flex-direction: column;
-  }
 }
