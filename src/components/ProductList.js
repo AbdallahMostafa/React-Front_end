@@ -78,9 +78,9 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                 </header>
                 </nav>
             {Array.isArray(products) && products.length > 0 ? (
-                 <CardGroup className="my-3">
+                 <CardGroup className="my-3 row">
                 {products.map((product) => (
-                    <Card key={product.id} className="product-card">
+                    <Card key={product.id} className="product-card col-md-3">
                         
                         <Card.Body className="card-body">
                             <div className="custom-control custom-checkbox checkbox-top-left">
