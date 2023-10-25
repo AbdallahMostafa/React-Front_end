@@ -71,7 +71,7 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                     <h2> Product List </h2>
                     <div className="container-div">
                         <Link to="/add-product">
-                            <Button  variant="primary" >ADD</Button>
+                             <Button variant="primary" >ADD</Button>
                         </Link>
                         <Button variant="danger" onClick={handleDelete}>MASS DELETE</Button>
                     </div>
@@ -81,20 +81,21 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                  <CardGroup>
                 {products.map((product) => (
                     <Card key={product.id} className="product-card">
-                        <div className="custom-control custom-checkbox checkbox-top-left">
-                            <input
-                            type="checkbox"
-                            className="custom-control-input delete-checkbox"
-                            id={`checkbox-${product.id}`}
-                            checked={selectedProducts.includes(product.id)}
-                            onChange={() => handleCheckboxChange(product.id)}
-                            />
-                            <label
-                                className="custom-control-label"
-                                htmlFor={`checkbox-${product.id}`}
-                            ></label>
-                        </div>
+                        
                         <Card.Body className="card-body">
+                            <div className="custom-control custom-checkbox checkbox-top-left">
+                                <input
+                                type="checkbox"
+                                className="custom-control-input delete-checkbox"
+                                id={`checkbox-${product.id}`}
+                                checked={selectedProducts.includes(product.id)}
+                                onChange={() => handleCheckboxChange(product.id)}
+                                />
+                                <label
+                                    className="custom-control-label"
+                                    htmlFor={`checkbox-${product.id}`}
+                                ></label>
+                            </div>
                             <Card.Title>{product.SKU}</Card.Title>
                             <Card.Text>{product.name}</Card.Text>
                             <Card.Text className="mb-2 text-muted">{product.price} $</Card.Text>

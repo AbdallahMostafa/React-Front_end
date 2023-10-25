@@ -22,11 +22,7 @@
   }
 
 @media (max-width: 768px) {
-  .product-card {
-    width: 100%; /* Cards take full width on small screens */
-    padding: 3px;
-  }
-
+ 
   .checkbox-top-left {
     position: absolute; /* Adjust checkbox position */
     top: 10px;
@@ -41,6 +37,7 @@
   }
 
   .btn {
+    width: 100%;
     font-size: 18px;
     margin: 10px;
   }
