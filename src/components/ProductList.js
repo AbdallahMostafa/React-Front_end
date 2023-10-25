@@ -78,7 +78,7 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                 </header>
                 </nav>
             {Array.isArray(products) && products.length > 0 ? (
-                 <CardGroup>
+                 <CardGroup className="my-3">
                 {products.map((product) => (
                     <Card key={product.id} className="product-card">
                         
