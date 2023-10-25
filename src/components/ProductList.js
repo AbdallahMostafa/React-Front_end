@@ -65,7 +65,7 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
         return <Card.Text>{renderedAttributes}</Card.Text>;
     };
         return (
-            <div> 
+            <div className="mx-5"> 
                 <nav>
                 <header className="header-contaier">
                     <h2> Product List </h2>

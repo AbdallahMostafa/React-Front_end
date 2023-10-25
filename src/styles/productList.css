@@ -22,7 +22,7 @@
   }
 
 @media (max-width: 768px) {
- 
+  
   /* Increase font size and spacing for readability */
   .card-title,
   .card-text {
@@ -32,7 +32,6 @@
 
   .btn {
     font-size: 18px;
-    margin: 10px;
   }
 
 }

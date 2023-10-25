@@ -115,7 +115,7 @@
         };
         
         return (
-            <div id='product_form'> 
+            <div className="mx-5" id='product_form'> 
                 <header className='form-header'>
                     <div>
                         <h2 id="product-header">Product Add</h2>
