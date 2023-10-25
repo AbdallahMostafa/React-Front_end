@@ -1,8 +1,10 @@
 
-.product-card:first-child,
+.product-card:first-child {
+  margin-right: 0px;
+}
+
 .product-card:last-child {
   margin-left: 0px;
-  margin-right: 0px;
 }
 .product-card {
     margin: 0 10px;
