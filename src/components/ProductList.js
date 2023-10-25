@@ -73,7 +73,7 @@ const ProductList = ( {products, loading, selectedProducts, setProducts, toggleP
                         <Link to="/add-product">
                             <Button  variant="primary" >ADD</Button>
                         </Link>
-                        <Button   variant="danger" onClick={handleDelete}>MASS DELETE</Button>
+                        <Button variant="danger" onClick={handleDelete}>MASS DELETE</Button>
                     </div>
                 </header>
                 </nav>

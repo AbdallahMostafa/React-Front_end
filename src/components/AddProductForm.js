@@ -65,27 +65,23 @@
                     Book: ['weight'],
                     Furniture: ['height', 'width', 'length'],
                 };
-                if (!name) {
-                    setNameError('Please enter a value for Name');
-                }
-            
-                if (!price) {
-                    setPriceError('Please enter a value for Price');
-                }
-            
-                if (!SKU) {
-                    setSKUError('Please enter a value for SKU');
-                }
-            
-                if (!type) {
-                    setTypeError('Please select a product type');
-                }
+        
                 const basicRequiredFields = ['name', 'price', 'SKU', 'type'];
-                if (basicRequiredFields.some(field => !formState[field] || formState[field].trim() === '')) {
-                    displayAlert('Please fill in all required fields!', 'danger');
-                    return;
+                const individualFieldErrors = [];
+                
+                basicRequiredFields.forEach(field => {
+                  if (!formState[field] || formState[field].trim() === '') {
+                    individualFieldErrors.push(`Please enter a value for ${field}`);
+                  }
+                });
+                
+                if (individualFieldErrors.length > 0) {
+                  const errorMessage = individualFieldErrors.join('<br>'); 
+                
+                  displayAlert(errorMessage, 'danger');
+                  return;
                 }
-            
+                
                 const type = formState.type;
                 if (requiredFields[type]) {
                     const missingFields = requiredFields[type].filter(field => !formState.attributes[field] || formState.attributes[field] <= 0);
@@ -95,6 +91,7 @@
                         return;
                     }
                 }
+               
             
                 const product = new Product(name, price, attributes, SKU, type);
                 try {
@@ -121,7 +118,7 @@
             <div id='product_form'> 
                 <header className='form-header'>
                     <div>
-                        <h2 id="product-header">Product Add </h2>
+                        <h2 id="product-header">Product Add</h2>
                     </div>
                     <Button onClick={handleSubmit} variant="success" >Save</Button>
                 </header>
@@ -152,7 +149,8 @@
                         onBlur={() => !price && setPriceError('Please enter a value for Price')}
                     />
                     {priceError && <span className="input-message error-message">{priceError}</span>}
-                    <label htmlFor="SKU" className='label-style'>SKU:</label>
+                    
+                    <label htmlFor="sku" className="label-style">SKU: </label>
                     <input
                         className="input-style"
                         type="text"
@@ -178,6 +176,7 @@
                         <option value="Book">Book</option>
                         <option value="Furniture">Furniture</option>
                     </select>
+                    
                     {typeError && <span className="input-message error-message">{typeError}</span>}
 
                     {typeSpecificFields[type]}

@@ -21,3 +21,33 @@
     justify-content: space-between;
     display: flex;
   }
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%; /* Cards take full width on small screens */
+  }
+
+  .checkbox-top-left {
+    position: absolute; /* Adjust checkbox position */
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Increase font size and spacing for readability */
+  .card-title,
+  .card-text {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .btn {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  /* Adjust navigation menu for mobile */
+  .container-div {
+    display: flex;
+    flex-direction: column;
+  }
+}

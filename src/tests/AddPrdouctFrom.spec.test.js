@@ -58,7 +58,7 @@ describe('AddProductForm Component', () => {
         const buttonElement = screen.getByRole('button', { name: /save/i });
         fireEvent.click(buttonElement);
         const errorDiv = screen.getByRole('alert');
-        expect(errorDiv).toHaveTextContent('Please fill in all required fields!');
+        expect(errorDiv).toHaveTextContent('Please enter a value for namePlease enter a value for pricePlease enter a value for SKUPlease enter a value for type');
     });
 
     it("should show error message when attribute for DVD is not entered", () => {

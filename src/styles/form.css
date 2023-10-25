@@ -46,3 +46,52 @@
     color: red;
 }
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .form-container {
+      padding: 10px; /* Add padding for better spacing on small screens */
+    }
+  
+    .label-style {
+      font-size: 16px; /* Smaller font size for labels */
+    }
+  
+    .input-style {
+      width: 100%; /* Full width input fields */
+      font-size: 16px; /* Smaller font size for input fields */
+      margin: 5px 0; /* Adjust margin for better spacing */
+    }
+  
+    .select-style {
+      width: 100%; /* Full width select dropdown */
+      font-size: 16px; /* Smaller font size for the dropdown */
+      margin: 5px 0; /* Adjust margin for better spacing */
+    }
+  
+    .button-style {
+      width: 100%; /* Full width button */
+      font-size: 16px; /* Smaller font size for buttons */
+      margin: 10px 0; /* Adjust margin for better spacing */
+    }
+  
+    .input-message {
+      font-size: 14px; /* Smaller font size for error messages */
+    }
+  
+    .form-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px; /* Add padding for better spacing */
+    }
+  
+    #product-header {
+      font-size: 24px; /* Larger font size for the form header */
+    }
+  
+    .alert {
+      font-size: 14px; /* Smaller font size for alerts */
+      margin: 10px 0; /* Adjust margin for better spacing */
+    }
+  }
+  
